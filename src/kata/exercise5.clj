@@ -5,6 +5,7 @@
 
 
 (testing "Names List"
+
   ; Create a list of customer names by using (map ...)
   ;(let [name-list []]
   (let [name-list (map #(:name %) (:customers mall))]
@@ -33,12 +34,14 @@
     (is (= names "[Joe,Steven,Patrick,Diana,Chris,Kathy,Alice,Andrew,Martin,Amy]"))))
 
 (testing "Oldest Customer"
+
   ; Get the oldest customer by using (apply max-key ...)
   ;(let [oldest-customer {}]
   (let [oldest-customer (apply max-key :age (:customers mall))]
     (is (= oldest-customer (nth (:customers mall) 3)))))
 
 (testing "Age Distribution"
+
   ; Create a map of age as key and number of customers as value using (group-by ...) and (count ...)
   ;(let [ageDistribution {}]
   (let [age-distribution (map (fn [[k v]] [k (count v)]) (group-by :age (:customers mall)))]
