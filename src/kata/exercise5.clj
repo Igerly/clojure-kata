@@ -37,3 +37,13 @@
   ;(let [oldest-customer {}]
   (let [oldest-customer (apply max-key :age (:customers mall))]
     (is (= oldest-customer (nth (:customers mall) 3)))))
+
+(testing "Age Distribution"
+  ; Create a map of age as key and number of customers as value)
+  ;(let [ageDistribution {}]
+  (let [age-distribution (map (fn [[k v]] [k (count v)]) (group-by :age (:customers mall)))]
+
+    (is (= (count age-distribution) 9))
+    (is (every? (fn [[k v]] (if (= k 22)
+                              (= v 2)
+                              (= v 1))) age-distribution))))
