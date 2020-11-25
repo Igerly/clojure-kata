@@ -5,32 +5,28 @@
 (testing "First registrant"
 
   ; Find the first customer
-  (let [first-customer
-        (first (:customers mall))]
+  (let [first-customer {}]
 
     (is (= (:name first-customer) "Joe"))))
 
 
 (testing "Is there anyone older than 40?"
 
-  ; Check whether any customer older than 40 exists or not
-  (let [over40
-        (some #(> (:age %) 40) (:customers mall))]
+  ; Check whether any customer older than 40 exists or not by using (some ...)
+  (let [over40 true]
 
     (is (nil? over40))))
 
 (testing "Is everybody older than 20?"
 
-  ; Check whether all customer are older than 20 or not
-  (let [over20
-        (every? #(> (:age %) 20) (:customers mall))]
+  ; Check whether all customer are older than 20 or not by using (every ...)
+  (let [over20 false]
 
     (is (true? over20))))
 
 (testing "Everyone wants something"
 
-  ; Confirm that none of the customer has empty :wants-to-buy
-  (let [all-want-smth
-        (not-any? #(= (count %) 0) (map :wants-to-buy (:customers mall)))]
+  ; Confirm that none of the customer has empty :wants-to-buy by using (not-any? ...)
+  (let [all-want-smth false]
 
     (is (true? all-want-smth))))
