@@ -33,7 +33,7 @@
 
 (testing "Oldest Customer"
 
-  ; Get the oldest customer by using (apply max-key ...)
+  ; Get the oldest customer by using combingin (apply ...) and (max-key ...)
   ;(let [oldest-customer {}]
   (let [oldest-customer (apply max-key :age (:customers mall))]
     (is (= oldest-customer (nth (:customers mall) 3)))))
