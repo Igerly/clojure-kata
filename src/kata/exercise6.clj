@@ -1,7 +1,6 @@
 (ns kata.exercise6
   (:use [clojure.test]
-        [kata.data]
-        [kata.matchers]))
+        [kata.data]))
 
 (testing "Numbers Seq"
 

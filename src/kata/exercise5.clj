@@ -1,8 +1,6 @@
 (ns kata.exercise5
   (:use [clojure.test]
-        [kata.data]
-        [kata.matchers]))
-
+        [kata.data]))
 
 (testing "Names List"
 
@@ -10,8 +8,8 @@
   ;(let [name-list []]
   (let [name-list (map #(:name %) (:customers mall))]
 
-    (is (contains-each name-list
-                       ["Joe", "Steven", "Patrick", "Diana", "Chris", "Kathy", "Alice", "Andrew", "Martin", "Amy"]))))
+    (is (= name-list
+           ["Joe", "Steven", "Patrick", "Diana", "Chris", "Kathy", "Alice", "Andrew", "Martin", "Amy"]))))
 
 
 (testing "Ages Set"
@@ -21,8 +19,8 @@
   (let [ages-set (set (map #(:age %) (:customers mall)))]
 
     (is (= 9 (count ages-set)))
-    (is (contains-each ages-set
-                         [21, 22, 26, 27, 28, 32, 35, 36, 38]))))
+    (is (= ages-set
+           #{21, 22, 26, 27, 28, 32, 35, 36, 38}))))
 
 (testing "Names in CSV"
 

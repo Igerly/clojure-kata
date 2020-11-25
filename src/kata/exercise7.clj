@@ -1,7 +1,6 @@
 (ns kata.exercise7
   (:use [clojure.test]
-        [kata.data]
-        [kata.matchers]))
+        [kata.data]))
 
 (testing "Average Age"
 

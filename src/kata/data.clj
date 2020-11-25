@@ -41,74 +41,74 @@
                         {:name "onion" :price 160}
                         {:name "ice cream" :price 200}
                         {:name "crisps" :price 80}]}]
-   :customers [{:name   "Joe"
-                :age    22
-                :budget 8000
-                :items  [{:name "small table"}
-                         {:name "plate"}
-                         {:name "fork"}]}
+   :customers [{:name         "Joe"
+                :age          22
+                :budget       8000
+                :wants-to-buy [{:name "small table"}
+                               {:name "plate"}
+                               {:name "fork"}]}
 
-               {:name   "Steven"
-                :age    27
-                :budget 2000
-                :items  [{:name "ice cream"}
-                         {:name "screwdriver"}
-                         {:name "cable"}
-                         {:name "earphone"}]}
+               {:name         "Steven"
+                :age          27
+                :budget       2000
+                :wants-to-buy [{:name "ice cream"}
+                               {:name "screwdriver"}
+                               {:name "cable"}
+                               {:name "earphone"}]}
 
-               {:name   "Patrick"
-                :age    28
-                :budget 4000
-                :items  [{:name "onion"}
-                         {:name "ice cream"}
-                         {:name "crisps"}
-                         {:name "chopsticks"}]}
+               {:name         "Patrick"
+                :age          28
+                :budget       4000
+                :wants-to-buy [{:name "onion"}
+                               {:name "ice cream"}
+                               {:name "crisps"}
+                               {:name "chopsticks"}]}
 
-               {:name   "Diana"
-                :age    38
-                :budget 12000
-                :items  [{:name "cable"}
-                         {:name "speaker"}
-                         {:name "headphone"}]}
+               {:name         "Diana"
+                :age          38
+                :budget       12000
+                :wants-to-buy [{:name "cable"}
+                               {:name "speaker"}
+                               {:name "headphone"}]}
 
-               {:name   "Chris"
-                :age    26
-                :budget 9000
-                :items  [{:name "saw"}
-                         {:name "bond"}
-                         {:name "plane"}
-                         {:name "bag"}]}
+               {:name         "Chris"
+                :age          26
+                :budget       9000
+                :wants-to-buy [{:name "saw"}
+                               {:name "bond"}
+                               {:name "plane"}
+                               {:name "bag"}]}
 
-               {:name   "Kathy"
-                :age    22
-                :budget 6000
-                :items  [{:name "cold medicine"}]}
+               {:name         "Kathy"
+                :age          22
+                :budget       6000
+                :wants-to-buy [{:name "cold medicine"}]}
 
-               {:name   "Alice"
-                :age    32
-                :budget 2500
-                :items  [{:name "chair"}
-                         {:name "desk"}]}
+               {:name         "Alice"
+                :age          32
+                :budget       2500
+                :wants-to-buy [{:name "chair"}
+                               {:name "desk"}]}
 
-               {:name   "Andrew"
-                :age    35
-                :budget 11000
-                :items  [{:name "pants"}
-                         {:name "coat"}]}
+               {:name         "Andrew"
+                :age          35
+                :budget       11000
+                :wants-to-buy [{:name "pants"}
+                               {:name "coat"}]}
 
-               {:name   "Martin"
-                :age    21
-                :budget 1000
-                :items  [{:name "cup"}
-                         {:name "plate"}
-                         {:name "fork"}
-                         {:name "spoon"}]}
+               {:name         "Martin"
+                :age          21
+                :budget       1000
+                :wants-to-buy [{:name "cup"}
+                               {:name "plate"}
+                               {:name "fork"}
+                               {:name "spoon"}]}
 
-               {:name   "Amy"
-                :age    36
-                :budget 2000
-                :items  [{:name "ointment"}
-                         {:name "poultice"}
-                         {:name "spinach"}
-                         {:name "ginseng"}
-                         {:name "onion"}]}]})
+               {:name         "Amy"
+                :age          36
+                :budget       2000
+                :wants-to-buy [{:name "ointment"}
+                               {:name "poultice"}
+                               {:name "spinach"}
+                               {:name "ginseng"}
+                               {:name "onion"}]}]})
