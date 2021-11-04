@@ -5,6 +5,7 @@
 (testing "How many items wanted"
 
   ; Count how many items are wanted
+    ; Use (count ...)
   (let [wanted-items -1]
 
     (is (= wanted-items 32))))

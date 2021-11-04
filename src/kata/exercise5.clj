@@ -29,7 +29,7 @@
 
 (testing "Oldest Customer"
 
-  ; Get the oldest customer by using combingin (apply ...) and (max-key ...)
+  ; Get the oldest customer by using combining (apply ...) and (max-key ...)
   (let [oldest-customer {}]
 
     (is (= oldest-customer (nth (:customers mall) 3)))))

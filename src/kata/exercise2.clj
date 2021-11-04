@@ -5,6 +5,7 @@
 (testing "Sort by age (ascending)"
 
   ; Create a sequence with ascending ordered age values.
+    ; Use (sort ...)
   (let [customer-ages-sorted []]
 
     (is (= (count customer-ages-sorted) 10))
@@ -14,6 +15,8 @@
 (testing "Sort by age (descending)"
 
   ; Create a sequence with descending ordered age values.
+    ; (sort ...) can accept a comparing function
+    ; (> ...) - is actually a function
   (let [customer-ages-sorted-desc []]
 
     (is (= (count customer-ages-sorted-desc) 10))
@@ -31,6 +34,7 @@
 (testing "Distinct age"
 
   ; Create a sequence with distinct age values
+    ; Use (set ...)
   (let [customer-ages []]
 
     (is (= (count customer-ages) 9))
